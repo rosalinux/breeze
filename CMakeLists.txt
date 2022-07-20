@@ -3,7 +3,7 @@ project(breeze)
 set(PROJECT_VERSION "5.25.80")
 set(PROJECT_VERSION_MAJOR 5)
 
-set(KF5_MIN_VERSION "5.94")
+set(KF5_MIN_VERSION "5.97")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 set(QT_MIN_VERSION "5.15.2")
 
@@ -29,6 +29,8 @@ option(WITH_DECORATIONS "Build Breeze window decorations for KWin" ON)
 if(WIN32 OR APPLE)
     set(WITH_DECORATIONS OFF)
 endif()
+
+find_package(KF5KCMUtils ${KF5_MIN_VERSION} REQUIRED)
 
 if(WITH_DECORATIONS)
     find_package(KDecoration2 REQUIRED)
