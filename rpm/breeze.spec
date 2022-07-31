@@ -1,6 +1,6 @@
 Name: breeze
 Version:	5.23.5
-Release:	1
+Release:	2
 Source0: breeze-5.23.5.tar.gz
 Summary: The KDE 5 Breeze style
 URL: http://kde.org/
